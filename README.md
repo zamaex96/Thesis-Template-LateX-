@@ -1,31 +1,11 @@
-## Thesis Structure and Content Summary
 
-**Thesis Title:** Thesis Title in English (영어 논문 제목)
-
-**Author:** First Name \ Surname (First Name Surname), vv \quad \quad kk
-
-**Degree:** Philosophy Doctor (Doctor)
-
-**Major:** Department of Artificial Intelligence Convergence
-
-**Keywords:** IoT, UIoT, UWOC, LAN-UWSN, Machine Learning
-
-**Supervisor:** Prof. \ AB \ XY (Prof. AB XY)
-
-**Committee:**
-* Prof. AB XY (Committee Chair)
-* Prof. AB XY
-* Prof. AB XY
-* Dr. AB XY
-
-**Submission Date:** August 23, 2024
 
 ### Frontmatter
 * **Cover Page:** Includes thesis title, author's name, degree, major, and submission date.
 * **Title Page:** Similar to the cover page, but with additional information like the supervisor and committee members.
 * **Submit Page:** Details about the thesis submission.
-* **Certificate Page:** (Optional) A page for the university's certificate.
-* **Certificate PageSign:** (Optional) A page for the supervisor and committee members to sign.
+* **Certificate Page:**  A page for the university's certificate.
+* **Certificate PageSign:**  A page for the supervisor and committee members to sign.
 * **Table of Contents:** Lists all chapters, sections, and subsections.
 * **List of Tables:** Lists all tables used in the thesis.
 * **List of Figures:** Lists all figures used in the thesis.
