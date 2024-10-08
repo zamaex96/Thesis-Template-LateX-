@@ -1,4 +1,4 @@
-The LaTeX code provided is designed to create a thesis template. It defines the document structure, formatting, and includes various packages for different functionalities. Here's a breakdown of its key purposes:
+The LaTeX code provided is designed to create a thesis template specifically for Pukyong National University, Korea. You can customize the script to accomodate the school's requirements. It defines the document structure, formatting, and includes various packages for different functionalities. Here's a breakdown of its key purposes:
 
 **Document Structure:**
 
