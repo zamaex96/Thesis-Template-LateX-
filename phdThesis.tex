@@ -1,0 +1,147 @@
+\documentclass[a4paper, 11pt, twosides, openany]{memoir}
+
+% Suppress specific warnings
+\usepackage{silence}
+\WarningFilter{nameref}{The definition of \label has changed}
+
+% Change main font to Times New Roman
+\usepackage{mathptmx}  % Times New Roman font
+
+% Mathematical packages
+\usepackage{amsmath}
+%\setcounter{secnumdepth}{3} % setting level of numbering (default for "report" is 3). With ''-1'' you have non-number also for chapters
+\usepackage{amssymb}
+
+% Korean language support
+\usepackage{kotex}
+% If specific font shapes are problematic, you can redefine them or use a default:
+%\renewcommand{\rmdefault}{ptm} % Example: Using Times Roman as a fallback
+
+% Graphics and figure handling
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{subcaption}
+% Other packages
+\usepackage{url}
+\usepackage{soul}
+\usepackage{appendix}
+\usepackage{listings}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{tabularx, booktabs}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{pifont}
+\usepackage{fontawesome}
+%\usepackage{sfmath}
+\usepackage{lipsum}
+
+% Page layout settings
+\usepackage{fapapersize}
+\usefapapersize{*,*,30mm,*,50mm,*}
+\renewcommand{\baselinestretch}{1.75}
+\checkandfixthelayout
+
+% Custom commands
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\def\Sz{$\mathpzc{S}^{(0)}$}
+\def\So{$\mathpzc{S}^{(1)}$}
+\def\St{$\mathpzc{S}^{(2)}$}
+\def\Ss{$\mathpzc{S}^{(3)}$}
+\def\t{_{t}}
+\def\s{_{s}}
+\def\fb{$f_{\scriptsize \textrm{buy}}$}
+\def\fs{$f_{\scriptsize \textrm{sell}}$}
+
+% User settings
+\def\titleEN{ Thesis Title in English}
+\def\titleKR{영어 논문 제목}
+\def\authorEN{First Name \ Surname}
+\def\authorENa{First Name\ Surname }
+\def\authorKR{vv \quad \quad kk }
+\def\degreeShort{Doctor}
+\def\Degree{Philosophy Doctor}
+\def\major{Department of Artificial Intelligence Convergence}
+\def\keyworda{IoT}
+\def\keywordb{UIoT}
+\def\keywordc{UWOC}
+\def\keywordd{LAN-UWSN}
+\def\keyworde{Machine Learning}
+\def\supervisorEN{Prof. \ AB \ XY}
+\def\supervisorKR{Prof.\ AB \ XY}
+\def\committeeB{Prof.\ AB \ XY } 
+\def\committeeA{Prof.\ AB \ XY }% The committee chair
+\def\committeeC{Prof.\ AB \ V \ XY }
+\def\committeeD{Dr.\ AB \ XY }
+\def\submitdate{August 23\textsuperscript{rd},  2024}
+
+\raggedbottom
+
+% Load hyperref last, just before cleveref
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%\usepackage{cleveref} % If using cleveref, load it after hyperref
+% Ensure subsections and subsubsections are numbered
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}  % Ensures subsubsections appear in the TOC
+% Ensure subsubsections are numbered
+\setsecnumdepth{subsubsection}
+
+% Explicitly set the numbering style for subsubsections
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\newcommand{\comm}[1]{}
+
+\begin{document}
+
+\pagestyle{empty}
+\include{frontmatter/CoverPage}
+\include{frontmatter/TitlePage}
+\include{frontmatter/SubmitPage}
+%\include{frontmatter/CertificatePage}
+\include{frontmatter/CertificatePageSign}
+
+%\clearpage
+\frontmatter
+\pagestyle{plain} % Page numbers in Roman numerals
+\clearpage
+\tableofcontents
+%\clearpage
+\listoftables
+%\clearpage
+\listoffigures
+\include{frontmatter/Abbreviations}
+\include{frontmatter/Abstract}
+\mainmatter
+\pagestyle{ruled}
+\include{mainmatter/Introduction}
+\include{mainmatter/ch02}
+\include{mainmatter/ch03}
+\include{mainmatter/ch04}
+\include{mainmatter/ch05}
+\include{mainmatter/Conclusion}
+\include{mainmatter/FutureWorks}
+
+\backmatter
+\bibliographystyle{unsrt}
+\bibliography{backmatter/bibliography} % Ensure the .bib file is named correctly and exists in the specified path
+
+\appendix
+\include{backmatter/Appendix}
+\include{backmatter/AbstractKR}
+\include{backmatter/Acknowledge}
+\include{mainmatter/Publications}
+
+% Abstract page in Korean
+%\pagestyle{empty}
+%\include{include/AbstractEN}
+%\include{include/thank}
+
+\end{document}
