@@ -1,4 +1,4 @@
-The LaTeX code provided is designed to create a thesis template specifically for Pukyong National University, Korea. You can customize the script to accommodate the school's requirements. It defines the document structure, formatting, and includes various packages for different functionalities. Here's a breakdown of its key purposes:
+The LaTeX code provided is designed to create a thesis template specifically for Pukyong National University, Korea. You can customize the script to accommodate the school's requirements. It defines the document structure, formatting, and includes various packages for different functionalities.  Here's a breakdown of its key purposes:
 
 # LaTeX Thesis Template Summary
 
@@ -52,4 +52,5 @@ The template is designed to be easily customizable, allowing users to:
 
 This template serves as a comprehensive starting point for doctoral candidates, ensuring their thesis adheres to academic standards while providing flexibility for individual requirements and preferences.
 
+ 
 
