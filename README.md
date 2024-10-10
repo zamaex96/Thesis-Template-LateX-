@@ -54,5 +54,123 @@ The template is designed to be easily customizable, allowing users to:
 
 This template serves as a comprehensive starting point for doctoral candidates, ensuring their thesis adheres to academic standards while providing flexibility for individual requirements and preferences.
 
- 
+## Document Class and Page Layout
+
+1. **Document Class**: 
+   - Uses `memoir` class with options:
+     - `a4paper`: A4 page size
+     - `11pt`: Base font size
+     - `twosides`: Two-sided printing layout
+     - `openany`: Chapters can start on any page
+
+2. **Page Layout**:
+   - Uses `fapapersize` package for custom margins
+   - Sets 30mm top margin and 50mm bottom margin
+   - Line spacing set to 1.75 (`\renewcommand{\baselinestretch}{1.75}`)
+
+## Language Support and Typography
+
+1. **Fonts**:
+   - Main font: Times New Roman (`mathptmx` package)
+   - Includes fallback option for problematic font shapes
+
+2. **Language Support**:
+   - Primary language: English
+   - Secondary language: Korean (`kotex` package)
+
+3. **Mathematical Typesetting**:
+   - `amsmath` and `amssymb` packages for advanced math formatting
+
+## Structure and Content Sections
+
+1. **Frontmatter**:
+   - Cover Page
+   - Title Page
+   - Submission Page
+   - Certificate Page (with signatures)
+   - Table of Contents
+   - List of Tables
+   - List of Figures
+   - Abbreviations
+   - Abstract (English)
+
+2. **Mainmatter**:
+   - Introduction
+   - Chapters 2-5
+   - Conclusion
+   - Future Works
+
+3. **Backmatter**:
+   - Bibliography
+   - Appendix
+   - Abstract (Korean)
+   - Acknowledgments
+   - Publications List
+
+## Customization and User-Defined Elements
+
+1. **Custom Commands**:
+   - Defines mathematical symbols and notation
+   - Creates shorthand for frequently used terms
+
+2. **User Settings**:
+   - Easily modifiable variables for:
+     - Thesis title (English and Korean)
+     - Author name (English and Korean)
+     - Degree and major
+     - Keywords
+     - Supervisor and committee members
+     - Submission date
+
+## Packages and Functionality
+
+1. **Graphics and Figures**:
+   - `graphicx`, `wrapfig`, `subcaption` for image handling
+   - `rotating`, `lscape` for rotated and landscape elements
+
+2. **Tables**:
+   - `tabularx`, `booktabs`, `multirow` for advanced table formatting
+
+3. **Code and Algorithms**:
+   - `listings` for code snippets
+   - `algorithmic` for algorithm descriptions
+
+4. **Bibliography**:
+   - Uses `unsrt` bibliography style
+   - Bibliography file expected as `backmatter/bibliography.bib`
+
+5. **Hyperlinks and Cross-referencing**:
+   - `hyperref` package with black, hidden links
+   - Potential for `cleveref` usage (commented out)
+
+6. **Miscellaneous**:
+   - `appendix` package for appendix formatting
+   - `fontawesome` for special symbols
+   - `silence` package to suppress specific LaTeX warnings
+
+## Numbering and Depth
+
+- Sections numbered up to subsubsection level (`\setcounter{secnumdepth}{3}`)
+- Table of Contents includes entries up to subsubsection (`\setcounter{tocdepth}{3}`)
+
+## Special Features
+
+1. **Multilingual Support**:
+   - Provisions for both English and Korean titles and abstracts
+
+2. **Flexible Chapter Structure**:
+   - Main chapters (2-5) included separately, allowing for easy content management
+
+3. **Publications List**:
+   - Dedicated section for listing the author's publications
+
+4. **Signature Page**:
+   - Includes a certificate page with space for committee signatures
+
+## Compatibility and Portability
+
+- Uses `epstopdf` for EPS to PDF conversion, enhancing compatibility with different LaTeX engines
+- Careful package ordering to avoid conflicts (e.g., `hyperref` loaded near the end)
+
+This template provides a robust framework for a doctoral thesis, balancing professional formatting with the flexibility needed for individual customization across various academic fields. 
 
