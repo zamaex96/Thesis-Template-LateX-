@@ -174,3 +174,10 @@ This template serves as a comprehensive starting point for doctoral candidates, 
 
 This template provides a robust framework for a doctoral thesis, balancing professional formatting with the flexibility needed for individual customization across various academic fields. 
 
+<div align="center">
+  <a href="https://maazsalman.org/">
+    <img width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="gh" />
+  </a>
+  <p> Explore More! 🚀</p>
+</div>
+
